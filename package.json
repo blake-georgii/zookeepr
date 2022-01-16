@@ -1,7 +1,7 @@
 {
   "name": "zookeepr",
   "version": "1.0.0",
-  "description": "",
+  "description": "Server for Zookeepr website",
   "main": "server.js",
   "scripts": {
     "test": "jest",
