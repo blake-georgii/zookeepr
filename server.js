@@ -14,6 +14,10 @@ app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
 });
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
 app.get('/api/animals', (req, res) => {
     let results = animals;
     if (req.query) {
